@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+
+    include templates/header.pug
+    
+    body#page-top.index
+
+        // BEGIN NAVIGATON
+        include templates/nav.pug
+        // END NAVIGATION
+
+        header
+            #maincontent.container(tabindex='-1')
+                .row
+                    .col-lg-12
+                        .intro-text
+                            h1.name Page not found
+                            hr.star-primary
+                            hr
+                            p
+                                i
+                                    | I hate to see you land on this page, but I don't have what you are looking for. Maybe try going back to my 
+                                    a(href='http://students.washington.edu/naruthk/', title='Homepage') homepage
+                                    |  to see if you can find something there?
+
+        // BEGIN FOOTER SECTION
+        include templates/footer.pug
+        // END FOOTER SECTION

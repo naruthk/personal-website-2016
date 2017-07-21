@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<!--
+	Naruth Kongurai
+	CSE 154
+	Section: AO
+	CSE 154 Homework 3: SpeedReader
+	This is an HTML file which produces the overall output of this online program that allows the
+	users to place any text that they want and adjusts how slow or fast (speed) each word in the
+	text appears in the output box. This HTML links to both a CSS and a JS file that produces the
+	style for this webpage and operates all the control settings, respectively.
+	-->
+    <head>
+        <title>SpeedReader</title>
+        <link href="speedreader.css" rel="stylesheet" type="text/css" />
+        <script src="speedreader.js" rel="javascript" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <header>
+            <h1>SpeedReader</h1>
+        </header>
+        
+        <!-- Begin output panel section -->
+        <div id="output" class="rad-medium"></div>
+        <!-- End output panel section -->
+        
+        <!-- Begin main control panel section -->
+        <div id="main-panel">
+            
+            <!-- Wrapper for control panel of playback, speed settings, font size adjustments -->
+            <div>
+                <fieldset id="fs-playback">
+                    <legend>Play Controls:</legend>
+                    <button id="start" type="button">Start</button>
+                    <button id="stop" type="button">Stop</button>
+                </fieldset>
+                <fieldset id="fs-speed">
+                    <legend>Speed:</legend>
+                    <select id="speed">
+                        <option value="1200">50 wpm</option>
+                        <option value="200">300 wpm</option>
+                        <option value="171" selected>350 wpm</option>
+                        <option value="150">400 wpm</option>
+                        <option value="133">450 wpm</option>
+                        <option value="120">500 wpm</option>
+                    </select>
+                </fieldset>
+                <fieldset id="fs-size">
+                    <legend>Size:</legend>
+                    
+                    <input id="rad-medium" type="radio" name="size" checked/> 
+                    <label for="rad-medium">Medium</label>
+                    
+                    <input id="rad-big" type="radio" name="size" />
+                    <label for="rad-big">Big</label>
+                    
+                    <input id="rad-bigger" type="radio" name="size" />
+                    <label for="rad-bigger">Bigger</label>
+                    
+                </fieldset>
+            </div>
+            <!-- End wrapper for control panel section -->
+            
+            <!-- Begin wrapper for bottom panel -->
+            <div>
+                <fieldset id="fs-inputtxt">
+                    <legend>Input Text</legend>
+                    <textarea id="txtarea_input" type="text" name="inputtext" 
+                        rows="10" cols="80"></textarea>
+                </fieldset>
+            </div>
+            <!-- End wrapper for bottom panel -->
+
+        </div>
+        <!-- End main control panel section -->
+        
+        
+        
+        <p id="test"></p>
+        
+        
+        
+        <!-- Begin validation section -->
+        <footer>
+            <p>
+                <a href="http://webster.cs.washington.edu/validate-html.php">
+                    <img src="https://webster.cs.washington.edu/images/w3c-html-blue.png" 
+                        alt="Validate HTML" />
+                </a>
+                <a href="http://webster.cs.washington.edu/validate-css.php">
+                    <img src="https://webster.cs.washington.edu/images/w3c-css-blue.png" 
+                        alt="Validate CSS" />
+                </a>
+                <a href="http://webster.cs.washington.edu/jslint/?referer">
+                    <img src="https://webster.cs.washington.edu/images/w3c-js-blue.png" 
+                        alt="Validate JS" />
+                </a>
+            </p>
+        </footer>
+        <!-- End validation section -->
+        
+    </body>
+</html>

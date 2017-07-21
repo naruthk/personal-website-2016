@@ -1,0 +1,138 @@
+section#projects.success
+    .container.text-center
+        h2 Projects
+        hr.star-light
+        p Learn more by clicking on each project's icon
+        
+//- BEGIN MIXIN - PROJECTS WEB BLOCK
+mixin projects-web-block(href, src, alt, p)
+    .col-sm-3.col-md-3.col-lg-3
+        a.portfolio-link(href= href, data-toggle='modal')
+            img.hidden-xs.img-responsive.img-centered(src=src, alt=alt)
+            p.visible-xs= p
+        p.hidden-xs= p
+//- END PROJECTS WEB BLOCK
+
+section
+    .container.project-box
+        // Projects - Web
+        .row.align-items-end
+            .col-sm-3.col-md-3.col-lg-3
+                h3 Web Related
+            .col-sm-9.col-md-9.col-lg-9
+                .row
+                    .col-sm-3.col-md-3.col-lg-3
+                        a.portfolio-link(href='http://www.showdc.co.th/', target='_blank')
+                            img.hidden-xs.img-thumbnail.img-responsive.img-centered(src='img/project_showdc_webscreenshot.png', alt='SHOW DC')
+                            p.visible-xs SHOW DC Shopping Mall
+                    .col-sm-6.col-md-6.col-lg-9
+                        p.hidden-xs 
+                            b SHOW DC Shopping Mall
+                        p 
+                            | I worked on a website development project as part of my internship in Ogilvy. I used Sitecore CMS to manage
+                            | template files and to insert content, and write HTML and CSS codes on Visual Studio Code before deploying them
+                            | on the server.
+                hr
+                .row
+                    .col-sm-3.col-md-3.col-lg-3
+                        a.portfolio-link(href='http://isscloud.cpall.co.th/qrvote/database.php', target='_blank')
+                            img.hidden-xs.img-thumbnail.img-responsive.img-centered(src='img/web_dcsatisfcation_mock.png', alt='DC Vote Website')
+                            p.visible-xs DC Vote Website
+                    .col-sm-6.col-md-6.col-lg-9
+                        p.hidden-xs 
+                            b DC Vote Website
+                        p 
+                            | I built this front-end web app so that each 7-Eleven's manager and executive staffs can analyze
+                            | the performance of 7-Eleven's delivery services.
+                        p 
+                            | See the Codepen version 
+                            a(href='http://codepen.io/naruth1212/pen/wdgKZx/', target='_blank') here
+                hr
+                .row
+                    .col-sm-3.col-md-3.col-lg-3
+                        a.portfolio-link(href='http://www.nivea.co.th/ext/th-TH/NIVEA-FOR-LIFE/Sassy-Society', target='_blank')
+                            img.hidden-xs.img-thumbnail.img-responsive.img-centered(src='img/project_nivea_webscreenshot.png', alt='NIVEA Thailand - Beauty Blogger Reviews')
+                            p.visible-xs NIVEA Thailand - Beauty Blogger Reviews
+                    .col-sm-6.col-md-6.col-lg-9
+                        p.hidden-xs 
+                            b NIVEA Thailand - Beauty Blogger Reviews
+                        p 
+                            | I published beauty articles made by beauty bloggers onto the NIVEA Thailand website, which runs on Microsoft's Sitecore CMS. 
+                            | I also helped create webpages for NIVEA's product launches, and also run daily tests to fix multiple bugs found the Experience section of the website.
+                hr
+                .row
+                    .col-sm-3.col-md-3.col-lg-3
+                        a.portfolio-link(href='#', target='_blank')
+                            //- img.hidden-xs.img-thumbnail.img-responsive.img-centered(src='img/project_showdc_webscreenshot.png', alt='Samsung eDM Thailand')
+                            p.visible-xs Samsung Email Template
+                    .col-sm-6.col-md-6.col-lg-9
+                        p.hidden-xs 
+                            b Samsung Email HTML Templates
+                        p 
+                            | I developed eDM (email) HTML templates for Samsung Thailand using Foundation framework and tested them on services
+                            | like Putsmail.
+        hr
+
+        // Projects - Mobile
+        .row.align-items-end
+            .col-sm-3.col-md-3.col-lg-3
+                h3 Mobile
+            .col-sm-9.col-md-9.col-lg-9.text-center
+                .row
+                    .col-sm-3.col-md-3.col-lg-3
+                        a.portfolio-link(href='#project7ElevenApp', data-toggle='modal')
+                            img.hidden-xs.img-thumbnail.img-responsive.img-centered(src='img/mobile_dcsatisfaction_mock_home.png', alt='DC Vote App')
+                            p.visible-xs DC Vote App
+                        p.hidden-xs DC Vote App
+                    .col-sm-3.col-md-3.col-lg-3
+                        a.portfolio-link(href='#projectBitseeApp', data-toggle='modal')
+                            img.hidden-xs.img-thumbnail.img-responsive.img-centered(src='img/company_bitsee.png', alt='Bitsee App')
+                            p.visible-xs Bitsee App
+                        p.hidden-xs Bitsee App
+        hr
+
+        // Projects - Research
+        .row.align-items-end
+            .col-sm-3.col-md-3.col-lg-3
+                h3 Research
+            .col-sm-9.col-md-9.col-lg-9
+                .row
+                    .col-sm-3.col-md-3.col-lg-3
+                        a.portfolio-link(href='#projectUndergraduateResearcher', data-toggle='modal')
+                            img.hidden-xs.img-responsive.img-centered(src='img/academia_cdsc.png', alt='Community Data Science Collective')
+                            p.visible-xs Undergraduate Researcher, University of Washington
+                    .col-sm-6.col-md-6.col-lg-9
+                        p.hidden-xs 
+                            b Undergraduate Researcher, University of Washington
+                        p 
+                            | My current work in this research group is to to analyze how the quantity/type of comments received make a Scratcher more or less likely to comment on others’ projects.
+                            | This is a research group that focuses on how the design of communication and information technologies shape fundamental social outcomes with broad theoretical and practical implications.
+                        p
+                            | View my profile on CDSC homepage 
+                            a(href='https://wiki.communitydata.cc/People#Naruth_Kongurai_.28University_of_Washington.29', target='_blank') here
+        hr
+        
+        // Projects - Others
+        .row.align-items-end
+            .col-sm-3.col-md-3.col-lg-3
+                h3 Other Projects
+            .col-sm-9.col-md-9.col-lg-9.text-center
+                .row
+
+                    +projects-web-block('#projectSpeedReader', 'img/project_speedreader_ui.png', 'Web Resources', 'Speed Reader')
+                    +projects-web-block('#projectBestReads', 'img/project_bestreads_ui.png', 'Web Resources', 'Best Reads Web App')
+                    .col-sm-3.col-md-3.col-lg-3
+                        a.portfolio-link(href='#othersLiteratureParadiseLost', data-toggle='modal')
+                            img.hidden-xs.img-rounded.img-responsive.img-centered(src='play/paradiselost/images/paradiselost_01_cover.png', alt='Paradise Lost Interactive Story')
+                            p.visible-xs Paradise Lost Adaptation
+                        p.hidden-xs Paradise Lost Adaptation
+                    .col-sm-3.col-md-3.col-lg-3
+                        a.portfolio-link(href='#othersAppLiverpoolFC', data-toggle='modal')
+                            img.hidden-xs.mg-rounded.img-responsive.img-centered(src='img/design_liverpoolnews.png', alt='Liverpool App Design using Adobe XD')
+                            p.visible-xs Liverpool FC Mobile App
+                        p.hidden-xs Liverpool FC Mobile App
+                .row   
+                    +projects-web-block('#project154WebResources', 'img/academia_uwcse.png', 'Web Resources', 'CSE 154 Basic Web Introduction Documentation')
+                    +projects-web-block('#projectOneLaptopPerChildTranslator', 'img/project_onelaptopperchild.jpeg', 'OS Language Translator', 'OS Language Translator')
+                    +projects-web-block('#projectPokemonBattle', 'img/project_pokemonbattle_ui.png', 'Web Resources', 'Pokemon Battle')
+        hr

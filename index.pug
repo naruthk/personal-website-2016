@@ -1,0 +1,117 @@
+doctype html
+html(lang='en')
+
+    include templates/header.pug
+    
+    body#page-top.index
+        
+        // BEGIN NAVIGATON
+        include templates/nav.pug
+        // END NAVIGATION
+
+        // BEGIN ABOUT SECTION
+        include templates/about.pug
+        // END ABOUT SECTION
+        
+        // BEGIN WORK SECTION
+        include templates/work.pug
+        // END WORK SECTION
+        
+        // BEGIN PROJECTS SECTION
+        include templates/projects.pug
+        // END PROJECTS SECTION
+
+        // BEGIN STATS SECTION
+        section#stats.success
+            .container
+                .row
+                    .col-lg-12.text-center
+                        h2 More About Me
+                        hr.star-light
+            
+        section
+            .container
+                .row
+                    .col-lg-4(style='padding-bottom: 20px;')
+                        h3 Technical Skills
+                        p Object-Oriented Programming:
+                        ul
+                            li Java
+                            li Python
+                        p Front-End Web Development:
+                        ul
+                            li HTML, CSS
+                            ul
+                                li  with Javascript, jQuery, and Bootstrap
+                            li Frameworks/ Libraries: SCSS, Pug, Foundation, NodeJs, Git
+                        p Back-End Web Development:
+                        ul
+                            li PHP
+                            ul
+                                li  with MySQL
+                        p Developments:
+                        ul
+                            li Making Android mobile app
+                            li Building front-end and back-end web app
+                    .col-lg-4(style='padding-bottom: 20px;')
+                        h3 Traits
+                        p Loves connecting with new people!
+                        p Seeks challenges and tackling them
+                        p Opens for discussions and collaboration
+                        p Broad design and analytical skills
+                        p Inclined to learn new technologies
+                        ul
+                            li Self-taught myself Python, PHP, and Android app development!
+                        p Strong public speaker
+                        ul
+                            li Held information panel for DC Satisfaction mobile app
+                            li Summer TA in Computer Science for Bangkok's high school students
+                        p Speaks English and Thai
+                    .col-lg-4(style='padding-bottom: 20px;')
+                        h3 Interests
+                        p Website Development
+                        ul
+                            li Front-End (Client) and Back-End (Server)
+                        p Software Development
+                        p Developing products that increase and widen users' engagement with technology
+                        p UI Design and UX
+                        p Educational Technology
+                        ul
+                            li Scratch Coding Platform
+                            li One Laptop Per Child
+                        p Studying Open-Source Codes and Databases
+        // END STATS SECTION
+
+        // BEGIN CONTACT SECTION
+        section#contact.success
+            .container
+                .row
+                    .col-lg-12.text-center
+                        h2 Contact
+                        hr.star-light
+        section
+            .container
+                .row
+                    .col-lg-12.text-center
+                        
+                        h4 Email Address
+                        p
+                            a(href='mailto:naruthk@uw.edu', title='Email') naruthk@uw.edu
+                        hr
+                        h4 Resume
+                        p
+                            a(href='media/Kongurai_Naruth_grad2018.pdf', title='Resume') Download (PDF)
+        // END CONTACT SECTION
+        
+        // BEGIN FOOTER SECTION
+        include templates/footer.pug
+        // END FOOTER SECTION
+
+        // Scroll to Top Button (Only visible on small and extra-small screen sizes)
+        .scroll-top.page-scroll.hidden-sm.hidden-xs.hidden-lg.hidden-md
+            a.btn.btn-primary(href='#page-top')
+                i.fa.fa-chevron-up
+        
+        // BEGIN PORTFOLIO MODULES (NOT VISIBLE)
+        include templates/portfolio.pug
+        // END PORTFOLIO MODULES

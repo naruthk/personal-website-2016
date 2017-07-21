@@ -1,0 +1,92 @@
+.project-box-wrap {
+    max-height: 200px;
+}
+@media screen and (min-width: 480px) {
+    .moving-slogan-wrap {
+        margin: auto;
+        width: 480px;
+    }
+}
+@media screen and (max-width: 479px) {
+    .moving-slogan-wrap {
+        margin: auto;
+        width: 400px;
+    }
+}
+sloganleft {
+  float: left;
+  margin-right: 0.3em;
+  font-size: 30px;
+  line-height: 50px;
+}
+b.siteslogan {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+}
+sloganright {
+    font-size: 30px;
+    line-height: 50px;
+    display: inline-block;
+    color: #e74c3c;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    -webkit-animation: move 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 1s;
+}
+
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+
+
+
+
+.bottom-spacing {
+    margin-bottom: 20px;
+}
+.work-items-grid {
+    margin-top: 30px;
+}
+.img-shrink-half {
+    width: 40%;
+}
+.demo-box {
+    border: 10px solid #999;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#stats ul {
+    font-size: 12pt;
+}
+
+ .tagcloud-span, .workcategory-span {
+    padding: 5px;
+    line-height: 30px;
+    margin: 0 20px 10px 0;
+    border:1px solid #f2f2f2;
+}
+.tagcloud-span {
+    display: block;
+    font-size: 15pt;
+}
+.workcategory-span {
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.work img {
+    width: 300px;
+    margin: auto;
+}

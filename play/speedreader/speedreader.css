@@ -1,0 +1,82 @@
+/*
+Naruth Kongurai
+CSE 154
+Section: AO
+This is a CSS file used for styling the overall layout and theme of the speedreader program.
+*/
+
+body {
+    background-color: #EAF6F6;
+    font-family: Garamond, sans-serif;
+}
+
+button, textarea, #output {
+    background-color: #FFFFFF;
+}
+
+button, textarea {
+    border: 1px solid gray;
+}
+
+button, footer img {
+    width: 70px;
+}
+
+.disabled {
+    background-color: lightgray;
+}
+
+fieldset {
+    border: none;
+    display: inline;
+    vertical-align: top;
+}
+
+footer {
+    bottom: 0px;
+    left: 5px;
+    position: absolute;
+}
+
+h1 {
+    text-align: center;
+}
+
+legend {
+    border-bottom: 1px solid #8EBEBE;
+    padding: 2px;
+    text-align: left;
+    width: 100%;
+}
+
+#main-panel {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#output {
+    border: 2px solid #8EBEBE;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 100px;
+    line-height: 100px;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+#output, legend {
+    font-weight: bold;
+}
+
+.rad-medium {
+    font-size: 36pt;
+}
+
+.rad-big {
+    font-size: 48pt;
+}
+
+.rad-bigger {
+    font-size: 60pt;
+}
