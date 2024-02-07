@@ -1,4 +1,4 @@
-# Naruth Kongurai Website
+# Personal Website
 
 This repository hosts all of the necessary files used for rendering my personal site. Rather than trying to showcase my ability to write complex HTML and CSS codes (the languages can never be complex, anyway), I think it is more reasonable to list down the development tools and libraries I used to create this website.
 
